@@ -13,13 +13,7 @@ $(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
 	
-	openForm() {
-  	document.getElementById("myForm").style.display = "block";
-	}
-
-	closeForm() {
-	  document.getElementById("myForm").style.display = "none";
-	}
+	
 	
 	/* JQuery Menu
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
