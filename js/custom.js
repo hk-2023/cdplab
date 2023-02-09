@@ -13,11 +13,11 @@ $(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
 	
-	function openForm() {
+	openForm() {
   	document.getElementById("myForm").style.display = "block";
 	}
 
-	function closeForm() {
+	closeForm() {
 	  document.getElementById("myForm").style.display = "none";
 	}
 	
