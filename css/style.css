@@ -214,7 +214,8 @@ button {
 .banner_bg_main {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+  /* background-image: url(../images/background.jpg);*/
+  background-color: teal;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -886,7 +887,7 @@ input.mail_bt::placeholder {
     float: left;
     font-size: 16px;
     color: #f1f1f1;
-    padding: 20px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .footer_menu li a {
@@ -957,28 +958,33 @@ input.mail_bt::placeholder {
 
 /*login pop-up*/
 .open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
+  background-color: inherit;
+  color: inherit;
+  /*padding: 16px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 280px;
+  width: 280px;*/
 }
 
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+  position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 15%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background: white;
+    font-size: larger;
+    max-width:500px;
 }
-
+.form-container
+{margin:2%;}
 
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
@@ -996,7 +1002,7 @@ input.mail_bt::placeholder {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -1004,11 +1010,12 @@ input.mail_bt::placeholder {
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+ 
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: grey;
 }
 
 /* Add some hover effects to buttons */
