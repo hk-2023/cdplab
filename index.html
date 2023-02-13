@@ -15,7 +15,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Eflyer</title>
+      <title>CDP Demo Homepage</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -69,14 +69,14 @@
          <!-- logo section start -->
          <div class="form-popup" id="myForm">
             
-            <form action="test" class="form-container" onsubmit="return validateForm()">
+            <form onsubmit="return setAction(this)" class="form-container" METHOD = "POST">
                
                      <input type="radio" id="html" name="fav_language" value="Login" required>
                      <label for="html">Login</label>  
                      <input type="radio" id="css" name="fav_language" value="Register" required>
                      <label for="css">Register</label><br>
-                   <label for="email"><b>Email</b></label>
-                   <input type="text" placeholder="Enter Email" name="email" required>
+                   <label for="email" ><b>Email</b></label>
+                   <input type="text" id="form-userid" placeholder="Enter Email" name="email" required>
                    <label for="psw"><b>Password</b></label>
                    <input type="password" placeholder="Enter Password" name="psw" required>
                    <button type="submit" class="btn">Submit</button>
