@@ -71,10 +71,14 @@
             
             <form onsubmit="return setAction(this)" class="form-container" METHOD = "POST">
                
-                     <input type="radio" id="html" name="fav_language" value="Login" required>
-                     <label for="html">Login</label>  
-                     <input type="radio" id="css" name="fav_language" value="Register" required>
-                     <label for="css">Register</label><br>
+                     <input type="radio" id="html" name="fav_language" value="Login" required onchange="loginForm(this)" checked="checked">
+                     <label for="login">Login</label>  
+                     <input type="radio" id="css" name="fav_language" value="Register" required onchange="registerForm(this)">
+                     <label for="register">Register</label><br>
+                   <label for="text" class="form-register" ><b>First Name</b></label>
+                   <input type="text" class="form-register" id="form-fname"placeholder="Enter First Name" name="fname" required>
+                   <label for="text" class="form-register" ><b>Last Name</b></label>
+                   <input type="text" class="form-register" id="form-lname"placeholder="Enter Last Name" name="fname" required>
                    <label for="email" ><b>Email</b></label>
                    <input type="text" id="form-userid" placeholder="Enter Email" name="email" required>
                    <label for="psw"><b>Password</b></label>
@@ -317,20 +321,5 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-<<<<<<< HEAD
-     
-
-=======
-    
-      <script>
-         function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
-         }
-         
-         function closeNav() {
-           document.getElementById("mySidenav").style.width = "0";
-         }
-      </script>
->>>>>>> 2e6392e2195893f138e2d268397e2d7a7ac0ddc2
    </body>
 </html>
