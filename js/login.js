@@ -19,8 +19,9 @@ analytics.identify( email,{
   firstName:fname,
   lastName:lname}
 );
-form.action = "index.html";
-  return false;
+
+
+return true;
 }
 
 function loginForm(form) {
